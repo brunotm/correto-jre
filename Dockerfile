@@ -2,8 +2,8 @@ FROM ubuntu:18.04
 LABEL maintainer="brunotm@gmail.com"
 
 # Amazon correto version and default environment variables
-ENV JDK_RELEASE="amazon-corretto-8.212.04.2-linux-x64"
-ENV JDK_URL="https://d2znqt9b1bc64u.cloudfront.net/${JDK_RELEASE}.tar.gz"
+ENV JDK_RELEASE="8.212.04.2"
+ENV JDK_URL="https://d3pxv6yz143wms.cloudfront.net/${JDK_RELEASE}/amazon-corretto-${JDK_RELEASE}-linux-x64.tar.gz"
 ENV JAVA_HOME="/opt/${JDK_RELEASE}"
 ENV JAVA_TOOL_OPTIONS="-XX:+UseContainerSupport"
 ENV PATH="${PATH}:${JAVA_HOME}/bin"
