@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 LABEL maintainer="brunotm@gmail.com"
 
 # Amazon correto version and default environment variables
-ENV JDK_RELEASE="amazon-corretto-8.202.08.2-linux-x64"
+ENV JDK_RELEASE="amazon-corretto-8.212.04.2-linux-x64"
 ENV JDK_URL="https://d2znqt9b1bc64u.cloudfront.net/${JDK_RELEASE}.tar.gz"
 ENV JAVA_HOME="/opt/${JDK_RELEASE}"
 ENV JAVA_TOOL_OPTIONS="-XX:+UseContainerSupport"
